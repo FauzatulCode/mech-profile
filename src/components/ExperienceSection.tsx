@@ -2,27 +2,27 @@
 import React from 'react';
 import { Calendar, MapPin } from 'lucide-react';
 
-const TimelineItem = ({ 
-  position, 
-  company, 
-  period, 
-  location, 
-  description 
-}: { 
-  position: string; 
-  company: string; 
-  period: string; 
-  location: string; 
-  description: string[]; 
+const TimelineItem = ({
+  position,
+  company,
+  period,
+  location,
+  description
+}: {
+  position: string;
+  company: string;
+  period: string;
+  location: string;
+  description: string[];
 }) => {
   return (
     <div className="relative pl-8 pb-12 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-gray-200">
       <div className="absolute left-0 top-2 -translate-x-1/2 w-4 h-4 rounded-full border-4 border-engineer-red bg-white"></div>
-      
+
       <div className="space-y-3">
         <h4 className="text-xl font-semibold text-engineer-darkgray">{position}</h4>
         <div className="text-lg font-medium text-engineer-red">{company}</div>
-        
+
         <div className="flex flex-wrap gap-4 text-sm text-gray-500">
           <div className="flex items-center gap-1">
             <Calendar className="h-4 w-4" />
@@ -33,7 +33,7 @@ const TimelineItem = ({
             <span>{location}</span>
           </div>
         </div>
-        
+
         <ul className="space-y-2 text-gray-700">
           {description.map((item, index) => (
             <li key={index} className="flex gap-2">
@@ -55,13 +55,13 @@ const ExperienceSection = () => {
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Practical experience in mechanical engineering through professional roles and internship.
         </p>
-        
+
         <div className="max-w-3xl mx-auto">
-          <TimelineItem 
+          <TimelineItem
             position="Freelancer / Self-Employed"
             company="Various Clients"
             period="Jun 2021 – Mar 2025"
-            location="Remote"
+            location="Hybrid in Indonesia"
             description={[
               "Delivered freelance services across various fields tailored to client project needs.",
               "Led end-to-end project execution: identifying client requirements, executing solutions, and ensuring high-quality deliverables.",
@@ -69,8 +69,8 @@ const ExperienceSection = () => {
               "Demonstrated problem-solving and adaptability while managing multiple projects independently."
             ]}
           />
-          
-          <TimelineItem 
+
+          <TimelineItem
             position="Mechanical Maintenance Intern"
             company="PT PLN (Persero) PLTA Batang Agam"
             period="Jul 2020 – Aug 2020"

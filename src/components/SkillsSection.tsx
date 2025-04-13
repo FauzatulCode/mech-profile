@@ -1,21 +1,20 @@
-
 import React from 'react';
-import { 
+import {
   Brain,
-  Users, 
+  Users,
   Zap,
-  Clock, 
-  FileSpreadsheet, 
+  Clock,
+  FileSpreadsheet,
   PenTool
 } from 'lucide-react';
 
 const TechnicalSkills = () => {
   const skills = [
-    { name: 'AutoCAD', progress: 90 },
-    { name: 'Autodesk Inventor', progress: 85 },
-    { name: 'CNC & Lathe Machine Operations', progress: 75 },
-    { name: 'Welding', progress: 80 },
-    { name: 'Microsoft Office', progress: 85 },
+    { name: 'AutoCAD', progress: 70 },
+    { name: 'Autodesk Inventor', progress: 65 },
+    { name: 'CNC & Lathe Machine Operations', progress: 60 },
+    { name: 'Welding', progress: 55 },
+    { name: 'Microsoft Office', progress: 80 },
   ];
 
   return (
@@ -27,8 +26,8 @@ const TechnicalSkills = () => {
             <span className="text-sm text-gray-500">{skill.progress}%</span>
           </div>
           <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-            <div 
-              className="h-full bg-engineer-red rounded-full skill-bar-progress" 
+            <div
+              className="h-full bg-engineer-red rounded-full skill-bar-progress"
               style={{ '--progress': `${skill.progress}%` } as React.CSSProperties}
             ></div>
           </div>
@@ -70,13 +69,13 @@ const SkillsSection = () => {
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           A combination of technical expertise and soft skills that enable me to excel in mechanical engineering roles.
         </p>
-        
+
         <div className="grid md:grid-cols-2 gap-10">
           <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
             <h3 className="text-2xl font-semibold mb-6 text-engineer-darkgray border-b pb-3">Technical Skills</h3>
             <TechnicalSkills />
           </div>
-          
+
           <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
             <h3 className="text-2xl font-semibold mb-6 text-engineer-darkgray border-b pb-3">Soft Skills</h3>
             <SoftSkills />
