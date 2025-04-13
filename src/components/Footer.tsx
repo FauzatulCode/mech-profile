@@ -1,9 +1,8 @@
-
 import React from 'react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-gray-900 text-white py-8">
       <div className="container px-4 md:px-6 mx-auto">
@@ -15,8 +14,18 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               Mechanical Engineering Professional Portfolio
             </p>
+            <p className="text-gray-400 text-sm mt-2">
+              <a
+                href="https://www.linkedin.com/in/annisa1202"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-engineer-navy transition-colors"
+              >
+                Developed by AnnisaCode
+              </a>
+            </p>
           </div>
-          
+
           <div className="flex flex-col items-center md:items-end">
             <div className="text-sm text-gray-400">
               &copy; {currentYear} All Rights Reserved

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Calendar, MapPin } from 'lucide-react';
 
@@ -17,11 +16,11 @@ const TimelineItem = ({
 }) => {
   return (
     <div className="relative pl-8 pb-12 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-gray-200">
-      <div className="absolute left-0 top-2 -translate-x-1/2 w-4 h-4 rounded-full border-4 border-engineer-red bg-white"></div>
+      <div className="absolute left-0 top-2 -translate-x-1/2 w-4 h-4 rounded-full border-4 border-engineer-navy bg-white"></div>
 
       <div className="space-y-3">
         <h4 className="text-xl font-semibold text-engineer-darkgray">{position}</h4>
-        <div className="text-lg font-medium text-engineer-red">{company}</div>
+        <div className="text-lg font-medium text-engineer-navy">{company}</div>
 
         <div className="flex flex-wrap gap-4 text-sm text-gray-500">
           <div className="flex items-center gap-1">
@@ -37,7 +36,7 @@ const TimelineItem = ({
         <ul className="space-y-2 text-gray-700">
           {description.map((item, index) => (
             <li key={index} className="flex gap-2">
-              <span className="text-engineer-red">•</span>
+              <span className="text-engineer-navy">•</span>
               <span>{item}</span>
             </li>
           ))}

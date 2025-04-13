@@ -37,37 +37,37 @@ const Index = () => {
   }, []);
 
   // Update page title
-  useEffect(() => {
-    document.title = "Mechanical Engineer Portfolio | Professional Profile";
-  }, []);
-  
+  // useEffect(() => {
+  //   document.title = "Mechanical Engineer Portfolio | Professional Profile";
+  // }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
       <main>
         <HeroSection />
-        
+
         <div className="section-fade-in">
           <AboutSection />
         </div>
-        
+
         <div className="section-fade-in">
           <SkillsSection />
         </div>
-        
+
         <div className="section-fade-in">
           <ExperienceSection />
         </div>
-        
+
         <div className="section-fade-in">
           <EducationSection />
         </div>
-        
+
         <div className="section-fade-in">
           <ContactSection />
         </div>
       </main>
-      
+
       <Footer />
       <ScrollToTop />
     </div>

@@ -100,7 +100,7 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="bg-engineer-red/10 p-3 rounded-full">
-                    <MapPin className="h-5 w-5 text-engineer-red" />
+                    <MapPin className="h-5 w-5 text-engineer-navy" />
                   </div>
                   <div>
                     <p className="font-medium text-gray-700">Location</p>
@@ -116,21 +116,16 @@ const ContactSection = () => {
                     href="https://www.linkedin.com/in/fauzatul-ilham"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-gray-100 p-3 rounded-full hover:bg-engineer-red hover:text-white transition-colors"
+                    className="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full hover:bg-engineer-navy hover:text-white transition-colors"
                     aria-label="LinkedIn"
                   >
+                    <span className="font-medium">LinkedIn</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                   </a>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-engineer-red text-white p-6 rounded-xl">
-              <h3 className="text-xl font-semibold mb-4">Ready to collaborate?</h3>
-              <p className="mb-6">Download my complete CV to learn more about my qualifications and experience.</p>
-              <Button variant="secondary" className="w-full">Download Full CV</Button>
             </div>
           </div>
 
@@ -139,7 +134,7 @@ const ContactSection = () => {
             <h3 className="text-xl font-semibold mb-6 text-engineer-darkgray">Send a Message</h3>
 
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-gray-700">Your Name</label>
                   <Input
@@ -196,7 +191,7 @@ const ContactSection = () => {
 
               <Button
                 type="submit"
-                className="w-full gap-2"
+                className="w-full gap-2 bg-engineer-navy text-white"
                 disabled={isSubmitting}
               >
                 <Send className="h-4 w-4" />

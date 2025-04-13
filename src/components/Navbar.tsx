@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between h-16 mx-auto">
         <div className="flex items-center">
           <a href="/" className="text-xl font-bold text-dark">
-            <span className="text-primary">Mech</span>Engineer
+            <span className="text-engineer-navy">Mech</span>Engineer
           </a>
         </div>
 

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GraduationCap, BookOpen, Star } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -17,8 +16,8 @@ const EducationSection = () => {
             <CardContent className="p-0">
               <div className="flex flex-col md:flex-row">
                 {/* Left side with university info */}
-                <div className="md:w-1/3 bg-engineer-red text-white p-6 flex flex-col">
-                  <GraduationCap className="h-12 w-12 mb-4" />
+                <div className="md:w-1/3 bg-engineer-navy text-white p-6 flex flex-col">
+                  <GraduationCap className="h-12 w-12 mb-4 text-engineer-navy" />
                   <h3 className="text-xl font-bold mb-1">Universitas Negeri Padang</h3>
                   <p className="text-white/80 mb-4">Associate's Degree in Mechanical Engineering</p>
                   <div className="mt-auto flex items-center gap-1">
@@ -31,7 +30,7 @@ const EducationSection = () => {
                 {/* Right side with coursework */}
                 <div className="md:w-2/3 p-6">
                   <div className="flex items-center gap-2 mb-4">
-                    <BookOpen className="h-5 w-5 text-engineer-red" />
+                    <BookOpen className="h-5 w-5 text-engineer-navy" />
                     <h4 className="text-lg font-semibold text-engineer-darkgray">Relevant Coursework</h4>
                   </div>
 

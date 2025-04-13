@@ -27,7 +27,7 @@ const TechnicalSkills = () => {
           </div>
           <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
             <div
-              className="h-full bg-engineer-red rounded-full skill-bar-progress"
+              className="h-full bg-engineer-navy rounded-full skill-bar-progress"
               style={{ '--progress': `${skill.progress}%` } as React.CSSProperties}
             ></div>
           </div>
@@ -51,8 +51,8 @@ const SoftSkills = () => {
     <div className="grid grid-cols-2 gap-4">
       {softSkills.map((skill, index) => (
         <div key={index} className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 border border-gray-100">
-          <div className="bg-engineer-red/10 p-2 rounded-full">
-            <skill.icon className="h-5 w-5 text-engineer-red" />
+          <div className="bg-engineer-navy/10 p-2 rounded-full">
+            <skill.icon className="h-5 w-5 text-engineer-navy" />
           </div>
           <span className="font-medium text-gray-700">{skill.name}</span>
         </div>
