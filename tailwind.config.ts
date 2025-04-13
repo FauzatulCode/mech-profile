@@ -113,14 +113,56 @@ export default {
 						opacity: '1',
 						transform: 'translateY(0)'
 					}
+				},
+				'fade-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'custom-bounce': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-15px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.5s ease-out'
+				'fade-in': 'fade-in 0.5s ease-out',
+				'fade-up': 'fade-up 0.7s ease-out',
+				'custom-bounce': 'custom-bounce 2s ease-in-out infinite'
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		function({ addUtilities, theme, variants }) {
+			const animationDelayUtilities = {
+				'.animate-delay-200': {
+					'animation-delay': '200ms',
+				},
+				'.animate-delay-300': {
+					'animation-delay': '300ms',
+				},
+				'.animate-delay-500': {
+					'animation-delay': '500ms',
+				},
+				'.animate-delay-700': {
+					'animation-delay': '700ms',
+				},
+				'.animate-delay-1000': {
+					'animation-delay': '1000ms',
+				},
+			};
+			addUtilities(animationDelayUtilities, variants('animationDelay'));
+		}
+	],
 } satisfies Config;
