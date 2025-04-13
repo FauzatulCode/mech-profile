@@ -5,13 +5,17 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-        const path = window.location.pathname;
         const repo = '/mech-profile';
+        const path = window.location.pathname;
 
-        if (path !== repo && path.startsWith(repo)) {
-            sessionStorage.setItem('redirect', path.slice(repo.length));
+        // Simpan path saat ini (tidak termasuk basename) sebagai redirect
+        if (path.startsWith(repo)) {
+            sessionStorage.setItem('redirect', path);
+        } else {
+            sessionStorage.setItem('redirect', repo + path);
         }
 
+        // Redirect ke halaman utama
         window.location.href = repo;
     </script>
 </head>

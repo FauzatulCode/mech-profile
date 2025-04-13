@@ -47,26 +47,6 @@ const ContactSection = () => {
     }
 
     try {
-      console.log('Sending email with data:', {
-        serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        data: {
-          to_email: import.meta.env.VITE_RECEIVER_EMAIL,
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-          time: new Date().toLocaleString('id-ID', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
-          })
-        }
-      });
-
       // Kirim email menggunakan EmailJS
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
