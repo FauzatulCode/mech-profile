@@ -7,7 +7,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b border-light">
       <div className="container flex items-center justify-between h-16 mx-auto">
         <div className="flex items-center">
-          <a href="/" className="text-xl font-bold text-dark">
+          <a href="/mech-profile/" className="text-xl font-bold text-dark">
             <span className="text-engineer-navy">Mech</span>Engineer
           </a>
         </div>
