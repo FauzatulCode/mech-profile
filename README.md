@@ -1,73 +1,61 @@
-# Welcome to your Lovable project
 
-## Project info
+# Mechanical Engineer Portfolio
+
+## Project Overview
+
+This project is a professional portfolio website for a Mechanical Engineer showcasing their skills, experience, education, and achievements. It was designed to make a strong first impression on potential employers and recruiters.
 
 **URL**: https://lovable.dev/projects/c237f84f-c609-4992-9a08-180ccd6342f7
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Modern, responsive design optimized for all devices
+- Interactive UI elements with smooth transitions and animations
+- Professional presentation of engineering skills and experience
+- Contact form for easy communication
+- Optimized for recruitment and job applications
 
-**Use Lovable**
+## Technologies Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c237f84f-c609-4992-9a08-180ccd6342f7) and start prompting.
+- React with TypeScript
+- Tailwind CSS for styling
+- Shadcn UI components
+- Lucide React for icons
+- React Router for navigation
 
-Changes made via Lovable will be committed automatically to this repo.
+## Sections
 
-**Use your preferred IDE**
+1. **Hero Section** - Introduction with profile photo
+2. **About** - Professional summary and key achievements
+3. **Skills** - Technical and soft skills visualization
+4. **Experience** - Professional history and internship details
+5. **Education** - Academic background and relevant coursework
+6. **Contact** - Contact form and personal information
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To work locally with this project, follow these steps:
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
+# Install dependencies
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Open [Lovable](https://lovable.dev/projects/c237f84f-c609-4992-9a08-180ccd6342f7) and click on Share -> Publish to deploy the project.
 
-**Use GitHub Codespaces**
+## Custom Domain Setup
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+To connect a custom domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c237f84f-c609-4992-9a08-180ccd6342f7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Learn more: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
