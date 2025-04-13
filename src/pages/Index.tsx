@@ -37,9 +37,9 @@ const Index = () => {
   }, []);
 
   // Update page title
-  useEffect(() => {
-    document.title = "Mechanical Engineer – Fauzatul Ilham’s Professional Profile";
-  }, []);
+  // useEffect(() => {
+  //   document.title = "Mechanical Engineer – Fauzatul Ilham’s Professional Profile";
+  // }, []);
 
   return (
     <div className="min-h-screen bg-white">

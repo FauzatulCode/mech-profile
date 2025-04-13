@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import emailjs from '@emailjs/browser';
+import DOMPurify from 'dompurify';
 
 // Inisialisasi EmailJS dengan public key
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "");
@@ -21,9 +22,10 @@ const ContactSection = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
+    const sanitizedValue = DOMPurify.sanitize(value);
     setFormData(prev => ({
       ...prev,
-      [name]: value
+      [name]: sanitizedValue
     }));
   };
 
@@ -116,7 +118,7 @@ const ContactSection = () => {
                     href="https://www.linkedin.com/in/fauzatul-ilham"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full hover:bg-engineer-navy hover:text-white transition-colors"
+                    className="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-full border-2 border-engineer-navy hover:bg-engineer-navy hover:text-white transition-colors"
                     aria-label="LinkedIn"
                   >
                     <span className="font-medium">LinkedIn</span>
