@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        const path = window.location.pathname;
+        const repo = '/mech-profile';
+
+        if (path !== repo && path.startsWith(repo)) {
+            sessionStorage.setItem('redirect', path.slice(repo.length));
+        }
+
+        window.location.href = repo;
+    </script>
+</head>
+
+<body>
+    Redirecting...
+</body>
+
+</html>
