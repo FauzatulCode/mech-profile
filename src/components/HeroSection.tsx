@@ -19,10 +19,10 @@ const HeroSection = () => {
               Fauzatul Ilham
             </h1>
             <h5 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>
-              <span className="animate-pulse text-engineer-navy">Mechanical Engineer</span> with a Passion for Innovation
+              <span className="animate-pulse text-engineer-navy">Mechanical Engineer</span> with Independent Project Experience
             </h5>
             <p className="text-lg text-gray-700 leading-relaxed">
-              A highly adaptable and dedicated Mechanical Engineering graduate with hands-on experience and strong technical capabilities.
+              Mechanical Engineering graduate with nearly 4 years of freelance experience providing technical assistance on diverse client projects. Skilled in translating client needs into clear deliverables, solving real-world problems using engineering principles, and working independently across varied environments.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
               <div className="flex gap-3">
@@ -42,6 +42,7 @@ const HeroSection = () => {
             </div>
           </div>
 
+
           {/* Profile Image */}
           <div className="md:w-2/5 max-w-xs md:max-w-sm relative animate-fade-in" style={{ animationDelay: '200ms' }}>
             <div className="relative overflow-hidden rounded-xl shadow-2xl bg-white p-3 border-4 border-engineer-rust hover:scale-[1.02] transition-transform duration-300">
@@ -59,9 +60,10 @@ const HeroSection = () => {
             >
               <p className="text-sm font-semibold text-engineer-navy">Open to opportunities:</p>
               <ul className="text-xs text-engineer-steel">
-                <li>✓ Mechanical Technician</li>
-                <li>✓ Junior Mechanical Engineer</li>
                 <li>✓ Mechanical Drafter</li>
+                <li>✓ CNC Machine Technician / Workshop Support</li>
+                <li>✓ Maintenance Technician / Mechanical Maintenance Support</li>
+
               </ul>
             </div>
           </div>
@@ -76,7 +78,7 @@ const HeroSection = () => {
             href="#about"
             className="flex flex-col items-center text-engineer-steel hover:text-engineer-rust transition-colors"
           >
-            <span className="text-sm font-medium mb-2">Scroll Down</span>
+            {/* <span className="text-sm font-medium mb-2">Scroll Down</span> */}
             <ArrowDown size={20} />
           </a>
         </div>

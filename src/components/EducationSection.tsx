@@ -8,7 +8,7 @@ const EducationSection = () => {
       <div className="container px-4 md:px-6 mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-engineer-darkgray text-center">Education & Qualifications</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Academic background and relevant coursework that provided the foundation for my technical expertise.
+          Academic background and practical coursework that shaped my foundation in mechanical engineering and technical support.
         </p>
 
         <div className="max-w-3xl mx-auto">
@@ -36,16 +36,16 @@ const EducationSection = () => {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="bg-gray-50 p-3 rounded-lg border border-gray-100">
+                      <span className="font-medium text-gray-700">Welding & Fabrication</span>
+                    </div>
+                    <div className="bg-gray-50 p-3 rounded-lg border border-gray-100">
                       <span className="font-medium text-gray-700">Technical Drawing</span>
                     </div>
                     <div className="bg-gray-50 p-3 rounded-lg border border-gray-100">
                       <span className="font-medium text-gray-700">CNC & Lathe Machine Operations</span>
                     </div>
                     <div className="bg-gray-50 p-3 rounded-lg border border-gray-100">
-                      <span className="font-medium text-gray-700">Project Design</span>
-                    </div>
-                    <div className="bg-gray-50 p-3 rounded-lg border border-gray-100">
-                      <span className="font-medium text-gray-700">Mechanical Systems</span>
+                      <span className="font-medium text-gray-700">Mechanical Systems & Maintenance</span>
                     </div>
                   </div>
 
@@ -58,7 +58,7 @@ const EducationSection = () => {
                       </div>
                       <div className="bg-gray-50 px-4 py-2 rounded-lg border border-gray-100">
                         <span className="font-medium text-gray-700">English</span>
-                        <span className="text-xs ml-2 text-gray-500">(Conventional)</span>
+                        <span className="text-xs ml-2 text-gray-500">(Conversational)</span>
                       </div>
                     </div>
                   </div>
@@ -69,6 +69,7 @@ const EducationSection = () => {
         </div>
       </div>
     </section>
+
   );
 };
 

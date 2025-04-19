@@ -52,20 +52,20 @@ const ExperienceSection = () => {
       <div className="container px-4 md:px-6 mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-engineer-darkgray text-center">Professional Experience</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Practical experience in mechanical engineering through professional roles and internship.
+          Practical experience in mechanical and technical support through independent projects and internships.
         </p>
 
         <div className="max-w-3xl mx-auto">
           <TimelineItem
-            position="Freelancer / Self-Employed"
-            company="Various Clients"
-            period="Jun 2021 – Mar 2025"
-            location="Hybrid in Indonesia"
+            position="Independent Technical Associate"
+            company="Fauzatul Technical Services · Freelance"
+            period="Jun 2021 – Present"
+            location="Hybrid · Payakumbuh, West Sumatra"
             description={[
-              "Delivered freelance services across various fields tailored to client project needs.",
-              "Led end-to-end project execution: identifying client requirements, executing solutions, and ensuring high-quality deliverables.",
-              "Maintained close communication with clients to align project goals with expectations.",
-              "Demonstrated problem-solving and adaptability while managing multiple projects independently."
+              "Provided versatile technical assistance on various client projects, applying engineering principles where relevant.",
+              "Managed independent project work from initiation to completion, focusing on client needs and satisfaction.",
+              "Communicated directly with clients to interpret requirements and deliver tailored solutions.",
+              "Adapted to diverse project environments and solved technical problems using analytical thinking."
             ]}
           />
 
@@ -75,14 +75,15 @@ const ExperienceSection = () => {
             period="Jul 2020 – Aug 2020"
             location="Agam, Indonesia"
             description={[
-              "Conducted regular inspections of the Intake Weir to ensure optimal performance of the power plant.",
-              "Performed maintenance on Air Cooler and Oil Cooler units.",
-              "Supported valve chamber maintenance operations to prevent system malfunctions and ensure smooth plant functionality."
+              "Performed inspections and preventive maintenance on Intake Weir systems to support plant operations.",
+              "Maintained Air Cooler and Oil Cooler units to ensure temperature control efficiency.",
+              "Assisted in valve chamber maintenance to support uninterrupted power generation processes."
             ]}
           />
         </div>
       </div>
     </section>
+
   );
 };
 
