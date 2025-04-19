@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
   const isDev = mode === 'development';
 
   return {
-    base: env.VITE_BASE_URL || '/',
+    base: env.VITE_BASE_URL || '/mech-profile/',
     server: {
       host: "127.0.0.1",
       port: parseInt(env.VITE_PORT) || 3000,

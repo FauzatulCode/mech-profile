@@ -43,6 +43,8 @@ jobs:
       - name: Build
         run: npm run build
         env:
+          VITE_BASE_URL: ${{ secrets.VITE_BASE_URL }}
+          VITE_PORT: ${{ secrets.VITE_PORT }}
           VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
           VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
           VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
@@ -52,7 +54,7 @@ jobs:
         uses: actions/configure-pages@v4
       
       - name: Copy 404.html to dist
-        run: cp public/404.html dist/
+        run: cp public/404.html dist/ || echo "404.html not found in public directory"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -61,4 +63,4 @@ jobs:
       
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
