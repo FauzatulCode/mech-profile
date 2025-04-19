@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/mech-profile/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="/mech-profile/" />
+  <title>Mechanical Engineer – Fauzatul Ilham’s Professional Profile</title>
+  <script>
+    // Handle GitHub Pages 404 redirect
+    (function () {
+      const redirect = sessionStorage.getItem('redirect');
+      if (redirect) {
+        sessionStorage.removeItem('redirect');
+        const cleanRedirect = redirect.startsWith('/mech-profile')
+          ? redirect
+          : '/mech-profile' + redirect;
+        history.replaceState(null, null, cleanRedirect);
+      }
+    })();
+  </script>
+  <script type="module" crossorigin src="/mech-profile/assets/index-DjLxgdpl.js"></script>
+  <link rel="stylesheet" crossorigin href="/mech-profile/assets/index-Dl4mtrdQ.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
