@@ -33,14 +33,12 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Validasi sederhana
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       toast.error('Mohon isi semua field');
       setIsSubmitting(false);
       return;
     }
 
-    // Validasi email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       toast.error('Mohon masukkan alamat email yang valid');
@@ -49,7 +47,6 @@ const ContactSection = () => {
     }
 
     try {
-      // Kirim email menggunakan EmailJS
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
@@ -86,11 +83,11 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-white">
-      <div className="container px-4 md:px-6 mx-auto">
+    <section id="contact" className="py-12 sm:py-16 px-4 sm:px-6 bg-white">
+      <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-2 text-engineer-darkgray text-center">Get In Touch</h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Interested in discussing opportunities? I'm open to Mechanical Technician, Junior Mechanical Engineer, and Mechanical Drafter roles.
+        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto break-words">
+          Interested in discussing opportunities? I'm open to Mechanical Drafter, CNC Machine Technician / Workshop Support, and Maintenance Technician / Mechanical Maintenance Support roles.
         </p>
 
         <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
@@ -98,7 +95,6 @@ const ContactSection = () => {
           <div className="space-y-8">
             <div className="bg-gray-50 p-6 rounded-xl border border-gray-100">
               <h3 className="text-xl font-semibold mb-6 text-engineer-darkgray">Let's Connect</h3>
-
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="bg-engineer-red/10 p-3 rounded-full">
@@ -134,7 +130,6 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
             <h3 className="text-xl font-semibold mb-6 text-engineer-darkgray">Send a Message</h3>
-
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
@@ -145,7 +140,7 @@ const ContactSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Enter your name"
-                    className="border-gray-200"
+                    className="w-full border-gray-200"
                     required
                   />
                 </div>
@@ -159,7 +154,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Enter your email"
-                    className="border-gray-200"
+                    className="w-full border-gray-200"
                     required
                   />
                 </div>
@@ -173,7 +168,7 @@ const ContactSection = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="What is this regarding?"
-                  className="border-gray-200"
+                  className="w-full border-gray-200"
                   required
                 />
               </div>
@@ -186,7 +181,7 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Your message here..."
-                  className="min-h-[120px] border-gray-200"
+                  className="w-full min-h-[120px] border-gray-200"
                   required
                 />
               </div>
