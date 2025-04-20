@@ -14,16 +14,19 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               Mechanical Engineering Professional Portfolio
             </p>
-            <p className="text-gray-400 text-sm mt-2">
+            <p className="text-gray-400 text-sm mt-2 flex items-center gap-1">
+              <span className="text-xs">🚀</span>
               <a
                 href="https://www.linkedin.com/in/annisa1202"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-engineer-navy transition-colors"
+                title="Visit Annisa's LinkedIn Profile"
+                className="hover:text-engineer-navy hover:scale-105 transform transition duration-200 ease-in-out underline underline-offset-4"
               >
                 Developed by AnnisaCode
               </a>
             </p>
+
           </div>
 
           <div className="flex flex-col items-center md:items-end">
