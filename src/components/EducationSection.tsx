@@ -27,14 +27,14 @@ const EducationSection = () => {
                   <p className="text-white/80 text-xs md:text-sm mt-2">Jul 2018 – Nov 2021</p>
                 </div>
 
-                {/* Right side with coursework */}
+                {/* Right side with coursework and details */}
                 <div className="w-full md:w-2/3 p-4 md:p-6">
                   <div className="flex items-center gap-2 mb-4">
                     <BookOpen className="h-5 w-5 text-engineer-navy" />
                     <h4 className="text-lg font-semibold text-engineer-darkgray">Relevant Coursework</h4>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                     <div className="bg-gray-50 p-3 rounded-lg border border-gray-100">
                       <span className="font-medium text-gray-700 break-words">Welding & Fabrication</span>
                     </div>
@@ -46,6 +46,45 @@ const EducationSection = () => {
                     </div>
                     <div className="bg-gray-50 p-3 rounded-lg border border-gray-100">
                       <span className="font-medium text-gray-700 break-words">Mechanical Systems & Maintenance</span>
+                    </div>
+                  </div>
+
+                  <div className="text-gray-700 text-sm leading-relaxed space-y-3 mb-6">
+                    <div>
+                      <h4 className="font-semibold text-engineer-darkgray">Activities & Contributions</h4>
+                      <ul className="list-disc list-inside">
+                        <li>Teaching Assistant for core engineering courses</li>
+                        <li>Contributed to curriculum development</li>
+                        <li>Created instructional materials and supported student learning</li>
+                      </ul>
+                    </div>
+                    <p>
+                      Graduated with strong technical foundations and hands-on experience through internship and freelance projects.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-lg font-semibold text-engineer-darkgray mb-3">Key Skills</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        'AutoCAD',
+                        'Autodesk Inventor',
+                        'Operational Lathe Machine',
+                        'CNC Simulator',
+                        'Welding',
+                        'Communication',
+                        'Collaboration',
+                        'Teamwork',
+                        'Easily Adaptable',
+                        'Project Management',
+                      ].map((skill, idx) => (
+                        <span
+                          key={idx}
+                          className="bg-gray-50 px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-100"
+                        >
+                          {skill}
+                        </span>
+                      ))}
                     </div>
                   </div>
 
